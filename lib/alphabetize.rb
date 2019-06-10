@@ -13,7 +13,11 @@ end
 
 def alphabetize(arr)
 
-  uniq_checker = arr.uniq!
+  initial_check = arr.map do |word|
+    order_value(word, 0)
+  end
+
+  uniq_checker = initial_check.uniq!
   index_counter = 0
   while uniq_checker != nil
     index_counter += 1
@@ -31,5 +35,5 @@ def alphabetize(arr)
   end
 
   binding.pry
-  final_array 
+  final_array
 end
