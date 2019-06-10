@@ -31,5 +31,5 @@ def alphabetize(arr)
   end
 
   binding.pry
-
+  final_array 
 end
